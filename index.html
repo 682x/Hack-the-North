@@ -1,25 +1,93 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Hack the North</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/4.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 1440px; height: 1080px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Hack the North</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style1.css">
+    <title>finalHTN</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="nav-list">
+          <ul class= "items">
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#game">Game</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </body>
+  </section>
+
+    <!-- Homepage -->
+    <section id="homepage">
+        <div class="homepage container">
+          <div>
+            <h1>Blah Blah GAME </h1>
+            <a href="#" type="button" class="cta">PLAY!</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Game and Signals -->
+      <section id= "game">
+        <div class="game-container">
+          <div class= "section">
+            <h1 class= "section-title">Pong</h1>
+          </div>
+          <!--
+          <div class= "section">
+            <h1 class= "section-title">Yay Signals!</h1>
+          </div>
+          -->
+          
+        </div>
+      </section>
+      
+      <head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Unity WebGL Player | Hack the North</title>
+		<link rel="shortcut icon" href="TemplateData/favicon.ico">
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<script src="TemplateData/UnityProgress.js"></script>
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+		  var unityInstance = UnityLoader.instantiate("unityContainer", "Build/4.json", {onProgress: UnityProgress});
+		</script>
+	  </head>
+	  <body>
+		<div class="webgl-content">
+		  <div id="unityContainer" style="width: 960px; height: 600px"></div>
+		  <div class="footer">
+			<div class="webgl-logo"></div>
+			<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+			<div class="title">Hack the North</div>
+		  </div>
+		</div>
+	  </body>
+
+      <!-- About Page -->
+      <section id= 'about'>
+        <div class= "about-container">
+          <div class= "about-game">
+            <h2>How it works</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+               when an unknown printer took a galley of type and scrambled it to make a type
+               specimen book. It has survived not only five centuries, but also the leap into
+               electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+        </div>
+      </section>
+</body>
+<div class="footer">
+  <p> we need to add words or footer dosent show <br>
+  gonna try to change this but if not <br>
+we can write something here</p>
+</div>
 </html>
